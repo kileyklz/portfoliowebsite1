@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="portfoliostyle.css" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/49415193d5.js" crossorigin="anonymous"></script>
+
+</head>
+    <div class="heading">
+       <h1>Resume</h1>
+    </div>
+
+<body> 
+    <div class="content">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="process.html">Project Process</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+</div>
+
+ <!-- Collapsible sections -->
+
+    <div class="linkpdf">
+        <a href="Kiley Zheng Resume (2).pdf" target="_blank"><u>PDF of Current Resume</u></a>
+    </div>  
+
+
+
+    <button class="collapsible">Education</button>
+    <div class="content">
+      <h3>University of Toronto</h3>
+      <ul class= collapse>
+          <li>B.A. in Digital Enterprise Management (DEM)</li><br>
+          <li>Sep 2022 - May 2026 (Expected)</li><br>
+      </ul>
+      <h3>Burnaby North Secondary School</h3>
+      <ul class= collapse>
+          <li>Dogwood Diploma(Grade 8 - 12)</li>    <br>
+          <li>Sep 2018 - June 2022</li>    <br>
+          <li>Honor Roll Award (all five years); GPA: 4.0</li>    <br>
+          <li>BN Marketing Scholarship</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">Work Experience</button>
+    <div class="content">
+      <h3>Shoppers Drug Mart</h3>
+      <div class="special-p">
+          <p>Pharamcy Assistant Intern, May 2021 ㅡ April 2021</p>
+          </div>
+          <div class= collapse1>
+              <p>This work experience opportunity was mandartory and given to me by my highschool.</p><br>
+              </div>
+              <ul class= collapse2>
+                  <li>Organized and filled drugs, medicine, and creams for patients</li>    <br>
+                  <li>Communicated with patients over the phone and in-person</li>    <br>
+                  <li>Filled out patients’ paperwork for the pharmacist</li>    <br>
+              </ul>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="collapsible">Volunteer Experience</button>
+    <div class="content">
+      <h3>Youth Insights</h3>
+      <div class="special-p">
+      <p>Co-Founder & Co-President, Jan 2021 ㅡ June 2022</p>
+      </div>
+      <div class= collapse1>
+          <p>Youth Insights is a registered non-profit organization that provides high school students with
+              information and advice on different careers in an interactive format. Through various events, the
+              organization helps to bridge the gap between industry professionals and aspiring youth.</p><br>
+          </div>
+      <ul class= collapse2>
+          <li>Leads the directors and oversees the organization of 50 students</li>    <br>
+          <li>Plans and hosts virtual events/panels, interviews with industry professionals, and fundraisers</li>    <br>
+          <li>Conducts interviews and oversees the recruitment process for new members</li>    <br>
+          <li>NSG Grant Recipient, applied for and received a grant for the organization</li> <br>
+          <li>Created meeting plans and organization growth plans</li> <br>
+          <li>Handled the social media account, along with creating marketing posts</li> <br>
+          <li>Designed and created the website for the organization</li> <br>
+      </ul>
+      <h3>You & I Organization</h3>
+      <div class="special-p">
+      <p>Member, Jan 2020 ㅡ June 2021</p>
+      </div>
+      <div class= collapse1>
+          <p>You and I Organization is an international, registered, non-profit organization that seeks to 
+            raise awareness towards youth about cultural diversity and racial injustice.</p><br>
+          </div>
+      <ul class= collapse2>
+          <li>Sold various items in multiple fundraiser events for racial indifference</li>    <br>
+          <li>Actively promoted producted to strangers to promote the cause</li>    <br>
+      </ul>
+</div>
+    
+
+    <button class="collapsible">Skills</button>
+    <div class="content">
+    <h3>Languages</h3>
+    <ul class= collapse>
+        <li>English: Proficient</li><br>
+        <li>Chinese (Mandarin): Proficient</li><br>
+        <li>French: Elementary</li><br>
+    </ul>
+    <h3>Technical Skills</h3>
+    <ul class= collapse>
+        <li>Python: Intermediate</li>    <br>
+        <li>Java: Intermediate</li>    <br>
+        <li>HTML: Intermediate</li>    <br>
+    </ul>
+    <h3>Other Skills</h3>
+    <ul class= collapse>
+        <li>MS Office: Advanced</li>    <br>
+        <li>Adobe XD: Intermediate</li>    <br>
+        <li>Canva: Advanced</li>    <br>
+    </ul>
+    </div>
+</div> 
+
+<button class="collapsible">Awards</button>
+<div class="content">
+  <h3> Business Case Competition</h3>
+  <ul class= collapse>
+      <li>2021 Tiger Global Case Competition (TGCC), Regional Finalist, 5th in Canada</li>    <br>
+  </ul>
+  <h3> Figure Skating</h3>
+  <ul class= collapse>
+    <li>2017 Alberta Regional Womens’ Pre-Novice Figure Skating Champion</li>    <br>
+    <li>2017 BC Regional Womens’ Pre-Novice Figure Skating Silver Medalist</li>    <br>
+</ul>
+</div> 
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+
+
+<div class="footer" style="justify-content: center;">
+
+    <h4>Quick Links</h4>
+    <div class="footerquick">
+    <a href="main.html">│ Home │</a>
+    <a href="portfolio.html">Resume │</a>
+    <a href="gallery.html">Gallery │</a>
+    <a href="process.html">Project Process │</a>
+    <a href="contact.html">Contact │</a>
+    </div>
+    
+    <hr style="color: #333;">
+    
+    <span class="dot"><a href="mailto:kiley.zheng@mail.utoronto.ca"><i class="fa fa-envelope"  style="font-size:36px"></i></a></span>
+    <span class="dot"><a href="https://linkedin.com/in/kiley-zheng" target="_blank"><i class="fab fa-linkedin-in" style="font-size:36px"></i></a></span>
+    <span class="dot"><a href="https://instagram.com/kileyzhng?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram" style="font-size:36px;color:black"></i></a></span>
+    <span class="dot"><a href="http://www.youtube.com/@kileyzheng3601" target="_blank"><i class="fab fa-youtube" style="font-size:36px;color:black"></i></a></span>
+    <p>© 2023 Kiley Zheng</p>
+    </div>
+
+</body>
+
+</html>

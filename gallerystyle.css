@@ -1,0 +1,286 @@
+
+header {
+    background-color: #f5dbf1;
+    border-bottom: 1px solid #fff;
+}
+
+
+body {
+    background-color: #ffffff; 
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #121212;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 0;
+    margin-top: 120px;
+    margin-left: 225px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 10px;
+    width: 150px;
+    height: 50%;
+    background-color: #ffc7cf;
+    z-index: -1;
+}
+h2{
+    position: relative;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 55px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+	color: #222;
+	margin: 10px;
+	padding-top: 0px;
+    padding-left: 30px;
+	padding-bottom: 30px;
+	line-height: 20px;
+	font-family: georgia;
+}
+
+.navbar {
+    text-align: center; 
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    right: 15px; 
+}
+.custom-width {
+    width: 50%;
+    margin: 0 auto; 
+	text-align: center
+  }
+
+ol{
+	margin-top: 0px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+	display: flex; 
+    justify-content: center; 
+}
+
+li {
+	color: #222;
+	margin: 0px;
+	line-height: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ebcbf5;
+    height: 12px;
+    margin-top: 3px;
+}
+
+.list {
+    list-style-type: disc;
+	display: flex; 
+    justify-content: center; 
+}
+
+
+  img {
+    vertical-align: middle;
+  }
+video{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+  .container {
+    position: relative;
+    width: 75%; 
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.mySlides img {
+    width: 100%;
+    max-height: 650px; /* Adjust this value as needed */
+    object-fit: cover;
+}
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+
+.footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    background: #f5dbf1;
+    left: 0;
+    right: 0;
+}
+
+
+.dot {
+    margin-top:15px;
+    height: 50px;
+    width: 50px;
+    background-color:none;
+    border: 2px solid; 
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footer p {
+    color: #212020;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.footer h4{
+    color: #212020;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: #212020; /* Link color */
+}
+
+.footer a:hover {
+    color: #ab94b2; /* Hover color */
+}
+i {
+    padding: 6px;
+}
+.footerquick {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer hr{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 3px;
+    height: 2px solid;
+    text-shadow: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 70%;
+}
+
+/* Adjust the styles for the icons as needed */
+.footer i {
+    font-size: 36px;
+}

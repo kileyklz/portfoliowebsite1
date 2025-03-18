@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="gallerystyle.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49415193d5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Resume</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="process.html">Project Process</a></li>
+        <li><a href="contact.html">Contact</a></li>
+   
+    </ul>
+</nav>
+    
+
+  <div class="text-container">
+      <h1>Gallery</h1>
+  </div>
+
+  <h2>Photography</h2>
+  <div id="page-container">
+    <div id="content-wrap">
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6 Twin River Bridges, Chongqing, China</div>
+      <img src="gallery1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6 InterContinental Shanghai Ruijin </div>
+      <img src="gallery2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6 Ambleside Beach, Vancouver</div>
+      <img src="gallery3.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 6 View of Downtown Toronto from Toronto Islands</div>
+      <img src="gallery4.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6 Cat Found on Tornto Islands</div>
+      <img src="gallery5.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 6 Above the Clouds</div>
+      <img src="gallery6.jpg" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="gallery1.jpg" style="width:100%" onclick="currentSlide(1)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery2.jpg" style="width:100%" onclick="currentSlide(2)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery3.jpg" style="width:100%" onclick="currentSlide(3)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery4.jpg" style="width:100%" onclick="currentSlide(4)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gallery5.jpg" style="width:100%" onclick="currentSlide(5)">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="gallery6.jpg" style="width:100%" onclick="currentSlide(6)">
+      </div>
+    </div>
+  </div>
+</div>
+  
+<h2>Videos</h2>
+<center>
+  <video width="340" height="500" controls>
+    <source src="dogvid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+  <video width="340" height="500" controls>
+    <source src="skyvid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+  <video width="340" height="500" controls>
+    <source src="bunniesvid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</center>
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}</script>
+
+<div class="footer" style="justify-content: center;">
+
+  <h4>Quick Links</h4>
+  <div class="footerquick">
+  <a href="main.html">│ Home │</a>
+  <a href="portfolio.html">Resume │</a>
+  <a href="gallery.html">Gallery │</a>
+  <a href="process.html">Project Process │</a>
+  <a href="contact.html">Contact │</a>
+  </div>
+  
+  <hr style="color: #333;">
+  
+  <span class="dot"><a href="mailto:kiley.zheng@mail.utoronto.ca"><i class="fa fa-envelope"  style="font-size:36px"></i></a></span>
+  <span class="dot"><a href="https://linkedin.com/in/kiley-zheng" target="_blank"><i class="fab fa-linkedin-in" style="font-size:36px"></i></a></span>
+  <span class="dot"><a href="https://instagram.com/kileyzhng?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram" style="font-size:36px;color:black"></i></a></span>
+  <span class="dot"><a href="http://www.youtube.com/@kileyzheng3601" target="_blank"><i class="fab fa-youtube" style="font-size:36px;color:black"></i></a></span>
+  <p>© 2023 Kiley Zheng</p>
+  </div>
+
+            
+</body>
+</html>
